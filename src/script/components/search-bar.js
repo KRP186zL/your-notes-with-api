@@ -67,7 +67,7 @@ class SearchBar extends HTMLElement {
 
     this._shadowRoot
       .querySelector('#formSearch')
-      .addEventListener('submit', event => {
+      .addEventListener('submit', (event) => {
         const loading = document.querySelector('note-list');
         loading.innerHTML = '<loading-bar></loading-bar>';
         loading.innerHTML += `<span slot="icon-add"><i class="fa-solid fa-plus"></i></span>`;
@@ -78,7 +78,7 @@ class SearchBar extends HTMLElement {
         console.log(isArchive);
 
         let keyword =
-          this._shadowRoot.querySelector('#formSearch').search.value;
+          this._shadowRoot.querySelector('#formSearch').search.value.toLowerCase();
 
         const cariNotes = async query => {
           try {
