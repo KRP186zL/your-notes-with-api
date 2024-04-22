@@ -87,8 +87,12 @@ class TambahNotes extends HTMLElement {
         padding: 0.5rem;
         width: 100%;
         transition : 100ms;
-
       }
+
+      input:focus,textarea:focus{
+        outline: 4px solid rgb(182, 157, 157);
+      }
+
       .form-group textarea {
         resize: none;
         height: 150px;

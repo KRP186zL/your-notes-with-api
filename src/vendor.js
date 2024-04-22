@@ -1,7 +1,6 @@
 import Notes from '../src/script/data/remote/notes-api.js';
 import home from '../src/script/view/home.js';
 import Swal from 'sweetalert2';
-import 'animate.css';
 
 const showErrorMessage = err => {
   Swal.fire({
